@@ -1,0 +1,42 @@
+#include <iostream>
+#include <clocale>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	bool a, b, c;
+	a = true;
+	b = true;
+	c = a || b;
+	std::cout << "Оператор: ||" << "\n";
+	std::cout << std::boolalpha;
+	std::cout << a << " " << b << " " << c << "\n";
+	a = false;
+	b = true;
+	c = a || b;
+	std::cout << a << " " << b << " " << c << "\n";
+	a = true;
+	b = false;
+	c = a || b;
+	std::cout << a << " " << b << " " << c << "\n";
+	a = false;
+	b = false;
+	c = a || b;
+	std::cout << a << " " << b << " " << c << "\n";
+	a = true;
+	b = true;
+	c = a || b;
+	std::cout << "Оператор: &&" << "\n";
+	std::cout << a << " " << b << " " << c << "\n";
+	a = false;
+	b = true;
+	c = a && b;
+	std::cout << a << " " << b << " " << c << "\n";
+	a = true;
+	b = false;
+	c = a && b;
+	std::cout << a << " " << b << " " << c << "\n";
+	a = false;
+	b = false;
+	c = a && b;
+	std::cout << a << " " << b << " " << c << "\n";
+}
