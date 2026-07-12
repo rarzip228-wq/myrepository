@@ -1,0 +1,10 @@
+#include <iostream>
+#include <clocale>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	std::string x;
+	std::cout << "Введите слово:\n";
+	std::cin >> x;
+	std::cout << "Вы ввели слово:\n" << x << "\n";
+}
