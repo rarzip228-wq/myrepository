@@ -24,7 +24,7 @@ int main() {
 	std::cout << a << " " << b << " " << c << "\n";
 	a = true;
 	b = true;
-	c = a || b;
+	c = a && b;
 	std::cout << "Оператор: &&" << "\n";
 	std::cout << a << " " << b << " " << c << "\n";
 	a = false;
