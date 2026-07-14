@@ -1,1 +1,17 @@
+#include <iostream>
+#include <clocale>
 
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b, c, min, middle, max;
+	std::cout << "Введите первое число:" << " " << std::ends;
+	std::cin >> a;
+	std::cout << "Введите второе число:" << " " << std::ends;
+	std::cin >> b;
+	std::cout << "Введите третье число:" << " " << std::ends;
+	std::cin >> c;
+	min = a < b ? (a < c ? a : c) : (b < c ? b : c);
+	max = a > b ? (a > c ? a : c) : (c > b ? c : b);
+	middle = a == min ? (b == max ? c : b) : (a == max ? (b == min? c : b) : a);
+	std::cout << "Результат:" << min << " " << middle << " " << max << std::endl;
+}
