@@ -1,0 +1,23 @@
+#include <iostream>
+#include <clocale>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b = 0, c = 0, num, sum = 0;
+	std::cout << "Введите целое число:\n";
+	std::cin >> a;
+	num = a;
+	while (num != 0) {
+		num /= 10;
+		b++;
+	}
+	num = 0;
+	int d = a;
+	while (num < b) {
+		c = d % 10 ;
+		d /= 10;
+		sum += c;
+		num++;
+	}
+	std::cout << "Сумма цифр:" << sum << std::endl;
+}
