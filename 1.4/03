@@ -1,1 +1,14 @@
+#include <iostream>
+#include <clocale>
 
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b = 1, c = 0;
+	std::cout << "Введите целое число:\n";
+	std::cin >> a;
+	while (b < 11) {
+		c = a * b;
+		std::cout << a << " " << "x" << " " << b << " " << "=" << " " << c << "\n";
+		b++;
+	}
+}
